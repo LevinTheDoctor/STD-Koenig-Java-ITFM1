@@ -18,7 +18,9 @@
 // Verwendet eine Abkürzung im Text.
 //   #abk("KI")            -> "Künstliche Intelligenz (KI)" bzw. "KI"
 //   #abk("KI", lang: true) -> erzwingt die Langform mit Klammerzusatz
-#let abk(kuerzel, lang: false) = context {
+//   #abk("KI", kurz: true) -> immer nur das Kürzel (z. B. in "Stream-API"
+//                             oder wenn die Langform schon in der Überschrift steht)
+#let abk(kuerzel, lang: false, kurz: false) = context {
   let definitionen = _abk-definitionen.get()
   if kuerzel not in definitionen {
     panic("Abkürzung '" + kuerzel + "' ist nicht definiert. Bitte in main.typ unter 'abkuerzungen' ergänzen.")
@@ -26,5 +28,5 @@
   let langform = definitionen.at(kuerzel)
   let bereits-verwendet = kuerzel in _abk-verwendet.get()
   _abk-verwendet.update(liste => if kuerzel in liste { liste } else { liste + (kuerzel,) })
-  if bereits-verwendet and not lang { kuerzel } else [#langform (#kuerzel)]
+  if kurz or (bereits-verwendet and not lang) { kuerzel } else [#langform (#kuerzel)]
 }

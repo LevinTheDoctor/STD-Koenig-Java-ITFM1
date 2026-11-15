@@ -40,14 +40,18 @@
   // Im Text mit #abk("KI") verwenden. Die erste Verwendung schreibt die Langform
   // aus; das Abkürzungsverzeichnis listet nur, was auch benutzt wurde.
   abkuerzungen: (
-    "KI": "Künstliche Intelligenz",
-    "OOP": "Objektorientierte Programmierung",
+    "JDK": "Java Development Kit",
+    "JVM": "Objektorientierte Programmierung",
     "API": "Application Programming Interface",
+    "JDBC":"Java Database Connectivity",
+    "JRE":"Java Runtime Environment",
+    "REPL":"Read-eval-print loop"
   ),
 )
 
 // --- Kapitel ---------------------------------------------------------------------------
-#include "Content/01-sortierverfahren.typ"
+#include "Content/02-Ausführungsmodell.typ"
+#include "Content/03-Java-Grundlagen.typ"
 
 // --- Literaturverzeichnis ---------------------------------------------------------------
 #literaturverzeichnis(datei: "/Bibliography/literatur.bib")
