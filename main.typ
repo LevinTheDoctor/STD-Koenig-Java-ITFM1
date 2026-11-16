@@ -41,7 +41,7 @@
   // aus; das Abkürzungsverzeichnis listet nur, was auch benutzt wurde.
   abkuerzungen: (
     "JDK": "Java Development Kit",
-    "JVM": "Objektorientierte Programmierung",
+    "JVM": "Java Virtual Machine",
     "API": "Application Programming Interface",
     "JDBC":"Java Database Connectivity",
     "JRE":"Java Runtime Environment",
@@ -50,6 +50,7 @@
 )
 
 // --- Kapitel ---------------------------------------------------------------------------
+#include "Content/01-Programierparadigma.typ"
 #include "Content/02-Ausführungsmodell.typ"
 #include "Content/03-Java-Grundlagen.typ"
 

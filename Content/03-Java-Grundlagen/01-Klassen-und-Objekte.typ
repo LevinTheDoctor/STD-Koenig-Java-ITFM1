@@ -36,3 +36,5 @@
 == Objekte <sec-objekte>
 
 #merksatz[Objekte sind Instanzen von Klassen.]
+
+== Konstruktoren
