@@ -45,7 +45,8 @@
     "API": "Application Programming Interface",
     "JDBC":"Java Database Connectivity",
     "JRE":"Java Runtime Environment",
-    "REPL":"Read-eval-print loop"
+    "REPL":"Read-eval-print loop",
+    "UML": "Unified Modeling Language"
   ),
 )
 
@@ -53,6 +54,7 @@
 #include "Content/01-Programierparadigma.typ"
 #include "Content/02-Ausführungsmodell.typ"
 #include "Content/03-Java-Grundlagen.typ"
+#include "Content/04-Klassen-Diagramm.typ"
 
 // --- Literaturverzeichnis ---------------------------------------------------------------
 #literaturverzeichnis(datei: "/Bibliography/literatur.bib")
